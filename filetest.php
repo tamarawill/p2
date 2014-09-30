@@ -13,9 +13,7 @@
 <?php
 
 	$thelongstring = file_get_contents('http://www.paulnoll.com/Books/Clear-English/words-01-02-hundred.html');
-	
-	echo $thelongstring;
-	
+		
 	$num_matches = preg_match_all("#<li>\s*(.*)\s*</li>#", $thelongstring);
 	
 	echo "\n\n $num_matches match(es)\n";
