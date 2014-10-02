@@ -1,0 +1,11 @@
+.container-fluid {
+	padding: 0 2em 3em 2em;
+}
+
+.paddedrow {
+	margin-top: 2em;
+}
+
+img {
+	padding: .5em;
+}

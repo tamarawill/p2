@@ -15,11 +15,7 @@
 	
 	<link rel="stylesheet" href="style.css">
 	
-	<?php 
-		error_reporting(E_ALL);
-		ini_set('display_errors', 1);
-		require "xkcdlogic.php"; 
-	?>	
+	<?php require "xkcdlogic.php"; ?>	
 
 </head>
 <body>
@@ -29,13 +25,29 @@
 		<h1>DWA15 Project 2 - XKCD Password Generator</h1>
 		</div> <!-- end col -->
 	</header>
-	<div class="row">
-		<div class="col-md-4">
 	
+	<div class="row paddedrow">
+		<div class="col-md-12">
+		<h2>What is an XKCD Password?</h2>
+		<div><a href="http://xkcd.com/936/" target="_blank"><img class="img-responsive" src="img/password_strength.png" border="0" alt="XKCD Comic #936"></a></div>
+		</div> <!-- end col -->
+	</div> <!-- end row -->
+	
+	<div class="row paddedrow">
+		<div class="col-md-12">
+			<h2>Generate a Password</h2>
+		</div> <!-- end col -->
+	</div> <!-- end row -->
+
+	<div class="row paddedrow">
+		<div class="col-md-4">
+		<div class="panel panel-default">
+			<div class="panel-heading">Make a password!</div>
+			<div class="panel-body">
 			<form action="<?=basename($_SERVER['PHP_SELF'])?>" method="POST">
 				<div class="form-group">
 					<label for="num_words">Number of Words</label>
-					<input class="form-control" type="number" name="num_words" id="num_words" min="1" max="9" step="1" value="2">
+					<input class="form-control" type="number" name="num_words" id="num_words" min="0" max="10" step="1" value="2">
 				</div>
 				<div class="form-group">
 					<label for="incl_num">Include a Number</label>
@@ -47,44 +59,17 @@
 				</div>
 				<input class="form-control" type="submit" value="Create Password!" class="btn btn-default">
 			</form>
-	
+			</div> <!-- end panel body -->
+		</div> <!-- end panel -->
 		</div> <!-- end col -->
-		<div class="col-md-4" id="result">
-		
-	<?php
-		$numwords;
-		$inclnum;
-		$inclsym;
-
-		if (array_key_exists('num_words', $_POST)) {
-			if ( (int)$_POST['num_words'] < 1 ||
-				(int)$_POST['num_words'] > 9) {
-				echo "<p>Invalid number - enter a number between 1 and 9.</p>";
-			} else {
-				$numwords=$_POST['num_words'];
-				if (array_key_exists('incl_num', $_POST)) {
-					$inclnum = $_POST['incl_num'];
-				} else {
-					$inclnum = 0;
-				}
-				if (array_key_exists('incl_sym', $_POST)) {
-					$inclsym = $_POST['incl_sym'];
-				} else {
-					$inclsym = 0;
-				}
-				echo "<h2>Your Password:</h2><p>";
-				echo make_password($numwords,$inclnum,$inclsym);
-				echo "</p>";
-			}
-		}
-	?>
-
+		<div class="col-md-8" id="result">
+			<?php show_formresult(); ?>
 		</div>
 	</div> <!-- end div class row -->
 </div> <!-- end div class container-fluid -->
 
 <!-- JQuery Javascript -->
-<script src="https://code.jquery.com/ui/1.11.1/jquery-ui.min.js"></script>
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 
 <!-- Bootstrap JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
