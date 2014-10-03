@@ -84,9 +84,6 @@ function make_password($number_of_words, $has_number, $has_symbol) {
 	$thepassword = "";
 	for ($i = 0; $i < $number_of_words; $i++) {
 		$newword=$words[rand(0, (sizeof($words)-1))];
-		if ($i > 0) {
-			$thepassword = $thepassword."_";
-		}
 		$thepassword = $thepassword.$newword;
 	}
 	if ($has_number) {
