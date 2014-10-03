@@ -6,6 +6,8 @@
 
 **Github Repository**: <https://github.com/tamarawill/p2>
 
+**Demo**: <http://screencast.com/t/M7Xalw2Z>
+
 ## Description:
 
 A password generator inspired by **XKCD's comic number 936** ( <http://xkcd.com/936/> ), styled using Bootstrap via CDN. I am also using a local stylesheet to override/add to the Bootstrap styles.
