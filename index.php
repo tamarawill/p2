@@ -60,19 +60,17 @@
 		</div> <!-- end col -->
 		
 		<div class="col-md-8">
-			
+					
 			<h2>What is an XKCD Password?</h2>
-			<p><a href="http://xkcd.com/936/" target="_blank"><img class="img-responsive" src="img/password_strength.png" alt="XKCD Comic #936" /></a></p>
-		
+			<p><a href="http://xkcd.com/936/" target="_blank"><img class="img-responsive" src="img/password_strength.png" alt="XKCD Comic No. 936" /></a></p>
+					
 		</div> <!-- end col -->
-		
-  	<div class="clearfix visible-md-block"></div>
-		
+				
 	</div> <!-- end row -->
 	
 	<footer class="row">
 		<div class="col-md-12">
-			<p>Blah blah blah</p>
+			<p>&copy; 2014 Tamara Will. Created for the course Dynamic Web Applications, Harvard Extension School, Fall 2014.</p>
 		</div>
 	</footer>
 			
