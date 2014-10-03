@@ -46,13 +46,13 @@
 					</div>
 					<div class="form-group">
 						<label for="incl_num">Include a Number</label>
-						<input class="form-control" name="incl_num" id="incl_num"type="checkbox" checked>
+						<input class="form-control" name="incl_num" id="incl_num" type="checkbox" checked>
 					</div>
 					<div class="form-group">
 						<label for="incl_sym">Include a Symbol</label>
 						<input class="form-control" name="incl_sym" id="incl_sym" type="checkbox" checked><br>
 					</div>
-					<input class="form-control" type="submit" value="Create Password!" class="btn btn-default">
+					<input class="form-control btn btn-default" type="submit" value="Create Password!">
 				</form>
 				</div> <!-- end panel body -->
 			</div> <!-- end panel -->
@@ -62,7 +62,7 @@
 		<div class="col-md-8">
 			
 			<h2>What is an XKCD Password?</h2>
-			<p><a href="http://xkcd.com/936/" target="_blank"><img class="img-responsive" src="img/password_strength.png" border="0" alt="XKCD Comic #936" /></a></p>
+			<p><a href="http://xkcd.com/936/" target="_blank"><img class="img-responsive" src="img/password_strength.png" alt="XKCD Comic #936" /></a></p>
 		
 		</div> <!-- end col -->
 		
