@@ -42,7 +42,7 @@
 				<form action="<?=basename($_SERVER['PHP_SELF'])?>" method="POST">
 					<div class="form-group">
 						<label for="num_words">Number of Words</label>
-						<input class="form-control" type="number" name="num_words" id="num_words" min="0" max="10" step="1" value="2">
+						<input class="form-control" type="number" name="num_words" id="num_words" min="1" max="9" step="1" value="2">
 					</div>
 					<div class="form-group">
 						<label for="incl_num">Include a Number</label>
